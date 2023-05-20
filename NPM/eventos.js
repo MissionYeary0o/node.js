@@ -11,6 +11,9 @@ var myEventHandler = function () {
 
 //Assign the event handler to an event:
 eventEmitter.on('scream', myEventHandler);
+eventEmitter.on('meuEvento', meuControladorDeEvento);
+
 
 //Fire the 'scream' event:
 eventEmitter.emit('scream');
+eventEmitter.emit('meuEvento');
